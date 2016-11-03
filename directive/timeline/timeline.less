@@ -1,4 +1,4 @@
-@timeline-main: #F45B69;
+/* @timeline-main: #F45B69;*/
 
 .timeline ul li {
 
@@ -7,7 +7,8 @@
     width: 6px;
     margin: 0 auto;
     padding-top: 20%;
-    background: #fff;
+    background-color: @timeline-line;
+    box-shadow: @timeline-shadow;
 
 }
 
@@ -21,13 +22,14 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #fff;
+    background: @timeline-line;
     transition: background .5s ease-in-out;
+    box-shadow: @timeline-shadow;
 
 }
 
 .timeline ul li.in-view::after {
-    background: @timeline-main;
+    background: @timeline-line;
 }
 
 .timeline ul li div {
@@ -38,10 +40,15 @@
     padding: 15px;
     background: @timeline-main;
     color: white;
-    border-radius: 2%;
+    border-radius: 7%;
+    box-shadow: @timeline-shadow;
     opacity: 0;
     transition: all .5s ease-in-out;
+}
 
+.timeline p{
+    font-family: 'Poppins', Sans-Serif;
+    font-size: 120%;
 }
 
 .timeline ul li div::before {

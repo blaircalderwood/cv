@@ -1,13 +1,13 @@
 var cvApp = angular.module('cv', ['ui.bootstrap', 'chart.js', 'ngRoute', 'ngAnimate']);
 
-    cvApp.config(function ($routeProvider) {
+    cvApp.config(['$routeProvider', function ($routeProvider) {
 
         /* Add New Routes Above */
         $routeProvider.otherwise({redirectTo: '/'});
 
-    });
+    }]);
 
-    cvApp.run(function ($rootScope) {
+    cvApp.run(['$rootScope', function ($rootScope) {
 
         $rootScope.safeApply = function (fn) {
             var phase = $rootScope.$$phase;
@@ -20,4 +20,4 @@ var cvApp = angular.module('cv', ['ui.bootstrap', 'chart.js', 'ngRoute', 'ngAnim
             }
         };
 
-    });
+    }]);

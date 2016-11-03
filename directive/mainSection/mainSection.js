@@ -133,6 +133,15 @@ angular.module('cv').directive('mainSection', function () {
                 }
             };
 
+                Chart.defaults.global.colors = [
+                '#FF6384',
+                '#00BFFF',
+                '#FFCE56',
+                '#4BC0C0',
+                '#FF7F50',
+                '#BA55D3'
+            ]
+
         }
 
     };

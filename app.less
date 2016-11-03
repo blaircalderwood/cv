@@ -29,6 +29,12 @@
 
 /* app css stylesheet */
 
+@bg-alt: dimgrey;
+@bg-colour: steelblue;
+@timeline-main: crimson;
+@timeline-line: white;
+@timeline-shadow: 2px 2px 2px #000;
+
 .menu {
     list-style: none;
     border-bottom: 0.1em solid black;
@@ -58,7 +64,7 @@ html, body {
 }
 
 body {
-    background-color: steelblue;
+    background-color: @bg-colour;
     color: white;
     font-family: 'Open Sans', sans-serif;
     position: relative;
@@ -76,7 +82,7 @@ body {
 
 #myNav {
     width: 100%;
-    background-color: rgba(70, 130, 180, 0.8);
+    background-color: fadeout(@bg-colour, 20%);
     z-index: 10;
     position: relative;
     top: 40vh;
@@ -224,7 +230,7 @@ hr {
 }
 
 .headline {
-    font-family: 'Monda', Sans-Serif;
+    font-family: Sans-Serif;
 }
 
 #sectionName {

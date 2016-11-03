@@ -25,10 +25,8 @@
             <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{project.company}}
             </p>
 
-            <p>
-                <a class="anchor-tag" ng-repeat="tag in project.tags"><span
-                    class="label label-default">{{tag}}</span> </a>
-            </p>
+            <!-- p class="tags-list"><a class="anchor-tag" ng-repeat="tag in project.tags"><span
+                    class="label label-default">{{tag}}</span></a><span>&nbsp;</span></p -->
 
         </div>
 
@@ -49,7 +47,7 @@
                                                            aria-hidden="true"></span><span> {{ project.company }}</span>
                         </p>
                         <p><a class="anchor-tag" ng-repeat="tag in project.tags"><span
-                            class="label label-default">{{tag}}</span> </a></p>
+                            class="label label-default">{{tag}}</span></a></p>
                     </div>
 
                 </div>
@@ -72,8 +70,8 @@
 
                 <div class="col-md-7">
                     <h3>
-                        <b class="overlay-title">Name </b><span
-                        class="overlay-content">{{ overlayProject.name }}</span>
+                        <b class="overlay-title">Name</b><span
+                        class="overlay-content">{{ " " + overlayProject.name }}</span>
                     </h3>
                 </div>
 
@@ -89,14 +87,14 @@
                 <div class="col-md-12">
                     <h3>
                         <b class="overlay-title">Establishment </b><span
-                        class="overlay-content">{{ overlayProject.company}}</span>
+                        class="overlay-content">{{ " " + overlayProject.company}}</span>
                     </h3>
                 </div>
 
                 <div class="col-md-12 hidden-xs">
                     <h3>
                         <b class="overlay-title">Date </b>
-                        <span class="overlay-content">{{ overlayProject.startDate }} - {{ overlayProject.endDate }}</span>
+                        <span class="overlay-content">{{ " " + overlayProject.startDate }} - {{ " " + overlayProject.endDate }}</span>
                     </h3>
                 </div>
 

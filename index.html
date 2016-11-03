@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 
 <!--[if lt IE 7]>
-<html lang="en" ng-app="cv" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<html lang="en" ng-app="cv" class="no-js lt-ie9 lt-ie8 lt-ie7" ng-strict-di> <![endif]-->
 <!--[if IE 7]>
-<html lang="en" ng-app="cv" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<html lang="en" ng-app="cv" class="no-js lt-ie9 lt-ie8" ng-strict-di> <![endif]-->
 <!--[if IE 8]>
-<html lang="en" ng-app="cv" class="no-js lt-ie9"> <![endif]-->
+<html lang="en" ng-app="cv" class="no-js lt-ie9" ng-strict-di> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" ng-app="cv" class="no-js"> <![endif]-->
+<html lang="en" ng-app="cv" class="no-js" ng-strict-di> <![endif]-->
 
 <head>
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Monda|Poppins" rel="stylesheet">
     <link href="app.less" type="text/css" rel="stylesheet/less">
 
 </head>
@@ -37,6 +38,7 @@
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 <script src="bower_components/chart.js/dist/Chart.min.js"></script>
 <script src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+<script type="text/javascript" src="scripts/email.min.js"></script>
 <!-- Add New Bower Component JS Above -->
 
 <!-- Main App JS -->
@@ -47,8 +49,6 @@
 <script src="directive/projectList/projectList.js"></script>
 <script src="filter/trusted.js"></script>
 <!-- Add New Component JS Above -->
-
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 </body>
 </html>
