@@ -1,9 +1,9 @@
-<div>
+<div class="container-fluid">
 
-    <a id="sectionButton" type="button" class="btn btn-default" aria-label="Left Align" ng-href="{{nextSection}}"
+    <!-- a id="sectionButton" type="button" class="btn btn-default" aria-label="Left Align" ng-href="{{nextSection}}"
        du-smooth-scroll duration="1000" offset="100" easing="0.8" ng-show="scrollShow" ng-init="scrollShow=true">
         <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
-    </a>
+    </a -->
 
     <div id="myNav" class="container-fluid no-bottom main-section" data-title="Web Developer">
 
@@ -25,11 +25,42 @@
 
     </div>
 
-    <timeline class="container-fluid section-container info-row main-section" data-title="Work and Education"
-              id="timelineSection"></timeline>
+    <div class="container-fluid section-container info-row main-section" data-title="Work and Education"
+         id="timelineSection">
+        <timeline></timeline>
+    </div>
 
-    <project-list class="main-section" data-title="Projects" id="projectsSection"></project-list>
+    <!-- Need to explicitly loop instead of using chart in charts to ensure main-section class is visible to js -->
+    <div class="row info-row main-section" data-title="{{ langChart.title }}" id="{{ langChart.id }}">
+            <canvas class="chart-horizontal-bar"
+                    chart-data="langChart.data" chart-labels="langChart.labels" chart-options="chartOptions">
+            </canvas>
+        </div>
 
-    <contact-me class="main-section" data-title="Contact Me" id="contactSection"></contact-me>
+    <div class="row info-row main-section" data-title="{{ techChart.title }}" id="{{ techChart.id }}">
+            <canvas class="chart-horizontal-bar"
+                    chart-data="techChart.data" chart-labels="techChart.labels" chart-options="chartOptions">
+            </canvas>
+        </div>
+
+    <div class="main-section" data-title="Projects" id="projectsSection">
+        <project-list></project-list>
+    </div>
+
+    <div class="main-section" data-title="Contact Me" id="contactSection">
+        <contact-me></contact-me>
+    </div>
+
+    <footer id="pageFooter">
+
+        <a href="https://uk.linkedin.com/in/blaircalderwood" class="contact-icon">
+                    <span class="fa-stack fa-2x">
+  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+  <i class="fa fa-linkedin-square fa-stack-1x"></i>
+</span>
+        </a>
+
+    </footer>
+
 
 </div>

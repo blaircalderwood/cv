@@ -32,10 +32,10 @@ angular.module('cv').directive('mainSection', function () {
             });
 
             function changeChartHeight() {
-                if (window.innerWidth < 480){
+                if (window.innerWidth < 480) {
                     scope.chartsHeight = "80vh";
                 }
-                else{
+                else {
                     scope.chartsHeight = "40vh";
                 }
             }
@@ -47,9 +47,10 @@ angular.module('cv').directive('mainSection', function () {
             window.addEventListener("load", changeSection);
             //window.addEventListener("resize", changeChartHeight);
 
-            var changeSection = function () {
+            function changeSection() {
 
                 var newSectionName = scope.sectionName;
+                var newSectionId = 'timelineSection';
 
                 items.each(function () {
 
@@ -67,7 +68,7 @@ angular.module('cv').directive('mainSection', function () {
                     scope.$apply();
 
                     scope.sectionName = newSectionName;
-                    scope.nextSection = newSectionName;
+                    scope.nextSection = '#' + newSectionId;
 
                     scope.sectionClass = [];
                     scope.sectionClass.push('isvisible');
@@ -78,10 +79,64 @@ angular.module('cv').directive('mainSection', function () {
 
                 }
 
+            }
+
+            var labels = [];
+            labels[0] = 'Inexperienced';
+            for (var i = 1; i < 10; i++) {
+                labels[i] = '';
+            }
+            labels[10] = 'Experienced';
+
+            scope.langChart = {
+                title: "Languages",
+                id: "languagesSection",
+                labels: ["JavaScript", "HTML", "CSS", "Python", "Java"],
+                data: [10, 8, 8, 10, 5]
+            };
+
+            scope.techChart = {
+                title: "Technologies",
+                id: "technologiesSection",
+                labels: ["Django", "Angular", "jQuery", "LESS", "Phaser", "Bootstrap"],
+                data: [10, 5, 8, 7, 6, 9]
+            };
+
+            scope.chartOptions = {
+
+                tooltips: {
+                    enabled: false
+                },
+
+                legend: {display: false},
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            maxRotation: 0,
+                            minRotation: 0,
+                            fontSize: 14,
+                            fontColor: '#fff',
+                            beginAtZero: true,
+                            callback: function (value, index, values) {
+                                return labels[value];
+                            }
+                        },
+                        gridLines: {display: false}
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            fontSize: 18,
+                            fontColor: '#fff'
+                        },
+                        gridLines: {display: false}
+                    }]
+                }
             };
 
         }
+
     };
+
 });
 
 // From http://stackoverflow.com/questions/37674113/how-to-track-if-element-is-visible-on-screen-with-same-class-when-scrolling-with
@@ -100,3 +155,4 @@ $.fn.isOnScreen = function () {
     bounds.bottom = bounds.top + this.outerHeight();
     return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
 };
+

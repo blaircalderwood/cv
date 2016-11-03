@@ -214,7 +214,7 @@ var onDocumentLoad = function onDocumentLoad()
 {
     if (FBTrace.DBG_INITIALIZE) FBTrace.sysout("FBL onDocumentLoad", "document loaded");
 
-    // fix IE6 problem with cache of background images, causing a lot of flickering
+    // fix IE6 problem with cache of background img, causing a lot of flickering
     if (FBL.isIE6)
         fixIE6BackgroundImageCache();
 
@@ -449,7 +449,7 @@ var findLocation =  function findLocation()
         var Env = FBL.Env;
 
         // Always use the local skin when running in the same domain
-        // See Issue 3554: Firebug Lite should use local images when loaded locally
+        // See Issue 3554: Firebug Lite should use local img when loaded locally
         Env.useLocalSkin = path.indexOf(location.protocol + "//" + location.host + "/") == 0 &&
                 // but we cannot use the locan skin when loaded from getfirebug.com, otherwise
                 // the bookmarklet won't work when visiting getfirebug.com
@@ -19500,7 +19500,7 @@ Firebug.NetMonitor.NetInfoBody = domplate(Firebug.Rep, new Firebug.Listener(),
     hideCache: function(file)
     {
         return true;
-        //xxxHonza: I don't see any reason why not to display the cache also info for images.
+        //xxxHonza: I don't see any reason why not to display the cache also info for img.
         return !file.cacheEntry; // || file.category=="image";
     },
 

@@ -1,4 +1,4 @@
-angular.module('cv', []).directive('contactMe', function () {
+angular.module('cv').directive('contactMe', function () {
     return {
         restrict: 'E',
         replace: true,

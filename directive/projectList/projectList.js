@@ -17,7 +17,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: 'October 2015',
                     endDate: 'December 2015',
                     link: 'https://www.youtube.com/embed/j0bbQysxf7Q',
-                    imageURL: 'images/projects/parkingSpaceFinder.png',
+                    imageURL: 'img/projects/parkingSpaceFinder.png',
                     teamSize: 2,
                     topFive: true,
                     tags: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'jQuery Mobile']
@@ -29,7 +29,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: '',
                     endDate: '',
                     link: 'https://www.offshore-renewables.co.uk/',
-                    imageURL: 'images/projects/CORE.jpg',
+                    imageURL: 'img/projects/CORE.jpg',
                     teamSize: 1,
                     topFive: true,
                     tags: ['Django', 'Bootstrap', 'LESS', 'HTML', 'Python', 'CSS', 'MVC']
@@ -41,7 +41,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: '',
                     endDate: '',
                     link: 'https://www.bio-materials.co.uk/',
-                    imageURL: 'images/projects/biomat.png',
+                    imageURL: 'img/projects/biomat.png',
                     teamSize: 1,
                     topFive: false,
                     tags: ['Django', 'Bootstrap', 'LESS', 'HTML', 'Python', 'CSS', 'MVC']
@@ -55,7 +55,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: 'February 2016',
                     endDate: 'April 2016',
                     link: 'http://excurj.pythonanywhere.com/',
-                    imageURL: 'images/projects/excurj.png',
+                    imageURL: 'img/projects/excurj.png',
                     teamSize: 4,
                     topFive: false,
                     tags: ['Django', 'Bootstrap', 'LESS', 'HTML', 'Python', 'CSS', 'MVC']
@@ -67,7 +67,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: 'January 2016',
                     endDate: 'February 2016',
                     link: 'https://nupp.nuclearpowerplantconference.com/',
-                    imageURL: 'images/projects/NUPP.jpg',
+                    imageURL: 'img/projects/NUPP.jpg',
                     teamSize: 1,
                     topFive: false,
                     tags: ['Django', 'Bootstrap', 'LESS', 'HTML', 'Python', 'CSS', 'MVC']
@@ -85,7 +85,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: 'September 2014',
                     endDate: 'December 2014',
                     link: 'https://www.youtube.com/embed/rTdJZn8rM5o',
-                    imageURL: 'images/projects/turnipWars.png',
+                    imageURL: 'img/projects/turnipWars.png',
                     teamSize: 2,
                     topFive: true,
                     tags: ['Phaser', 'HTML', 'Web Games', 'JavaScript', 'Google App Engine']
@@ -97,7 +97,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: '',
                     endDate: '',
                     link: 'https://www.fireandblast.co.uk/',
-                    imageURL: 'images/projects/confab.jpg',
+                    imageURL: 'img/projects/confab.jpg',
                     teamSize: 1,
                     topFive: false,
                     tags: ['Django', 'Bootstrap', 'LESS', 'HTML', 'Python', 'CSS', 'MVC']
@@ -114,7 +114,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: 'October 2015',
                     endDate: 'December 2015',
                     link: 'https://www.youtube.com/embed/aA_zj2pinus',
-                    imageURL: 'images/projects/pressureProject.png',
+                    imageURL: 'img/projects/pressureProject.png',
                     teamSize: 4,
                     topFive: true,
                     tags: ['Android', 'Java', 'Hardware', 'HCI', 'Research', 'Mobile Development']
@@ -126,7 +126,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: '',
                     endDate: '',
                     link: 'https://www.ship-dismantling.co.uk/',
-                    imageURL: 'images/projects/DISS.png',
+                    imageURL: 'img/projects/DISS.png',
                     teamSize: 1,
                     topFive: false,
                     tags: ['Django', 'Bootstrap', 'LESS', 'HTML', 'Python', 'CSS', 'MVC']
@@ -138,7 +138,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: '',
                     endDate: '',
                     link: 'https://www.adwind2017.com/',
-                    imageURL: 'images/projects/adwind.jpg',
+                    imageURL: 'img/projects/adwind.jpg',
                     teamSize: 1,
                     topFive: false,
                     tags: ['Django', 'Bootstrap', 'LESS', 'HTML', 'Python', 'CSS', 'MVC']
@@ -150,7 +150,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: 'June 2016',
                     endDate: 'September 2016',
                     link: '',
-                    imageURL: 'images/projects/mastersProject.png',
+                    imageURL: 'img/projects/mastersProject.png',
                     teamSize: 1,
                     topFive: true,
                     tags: ['Python', 'Numpy', 'Scipy', 'Data Science', 'Research', 'Multimedia']
@@ -162,7 +162,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: 'October 2016',
                     endDate: '',
                     link: '',
-                    imageURL: 'images/projects/portfolio.png',
+                    imageURL: 'img/projects/portfolio.png',
                     teamSize: 1,
                     topFive: false,
                     tags: ['Angular', 'HTML', 'JavaScript', 'Bootstrap', 'CSS', 'chartJS']
@@ -177,7 +177,7 @@ angular.module('cv').directive('projectList', function () {
                     startDate: '',
                     endDate: '',
                     link: '',
-                    imageURL: 'images/projects/uws.png',
+                    imageURL: 'img/projects/uws.png',
                     teamSize: 1,
                     topFive: false,
                     tags: ['Game Development', 'HTML', 'JavaScript', 'jQuery', 'jQuery Mobile', 'Multimedia']

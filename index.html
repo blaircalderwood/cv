@@ -7,7 +7,7 @@
 <!--[if IE 8]>
 <html lang="en" ng-app="cv" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" ng-app="cv" class="no-js"> <!--<![endif]-->
+<html lang="en" ng-app="cv" class="no-js"> <![endif]-->
 
 <head>
     <title></title>
@@ -18,6 +18,9 @@
 
 </head>
 <body>
+
+<main-section></main-section>
+
 <!-- Livereload script for development only (stripped during dist build) -->
 <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
 
@@ -32,11 +35,12 @@
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-resource/angular-resource.js"></script>
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/chart.js/dist/Chart.min.js"></script>
+<script src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
 <!-- Add New Bower Component JS Above -->
 
 <!-- Main App JS -->
 <script src="app.js"></script>
-<script src="directive/projects/projects.js"></script>
 <script src="directive/contactMe/contactMe.js"></script>
 <script src="directive/timeline/timeline.js"></script>
 <script src="directive/mainSection/mainSection.js"></script>
@@ -45,8 +49,6 @@
 <!-- Add New Component JS Above -->
 
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-<main-section></main-section>
 
 </body>
 </html>
